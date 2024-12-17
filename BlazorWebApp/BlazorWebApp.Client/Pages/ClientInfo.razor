@@ -1,0 +1,20 @@
+﻿@page "/clientinfo"
+
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Roles = "Viewer")]
+@rendermode InteractiveAuto
+
+<PageTitle>Mercola Health - Admin Panel - Client Info</PageTitle>
+
+<div style="text-align: center;">
+    <img src="/images/Mercola-logo-black-font.svg" alt="mercola logo" width="150" height="80" />
+    <br />
+    <span style="color: firebrick;">View Clients</span>
+</div>
+
+
+@code {
+
+}
+
