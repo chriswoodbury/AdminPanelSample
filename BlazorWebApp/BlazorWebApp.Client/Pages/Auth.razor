@@ -2,7 +2,7 @@
 
 @using Microsoft.AspNetCore.Authorization
 
-@attribute [Authorize(Roles = "SuperUser")]
+@attribute [Authorize(Roles = "SuperAdmin")]
 @rendermode InteractiveAuto
 
 <PageTitle>Mercola Health - Admin Panel - Secure Page</PageTitle>
@@ -10,7 +10,7 @@
 <div style="text-align: center;">
     <img src="/images/Mercola-logo-black-font.svg" alt="mercola logo" width="150" height="80" />
     <br />
-    <span>This is a <span style="color: firebrick; font-weight: bold; font-style: italic;">SECURE</span> page</span>
+    <span style="color: firebrick; font-weight: bold; font-style: italic;">Super Admin Only</span>
 </div>
 
 
