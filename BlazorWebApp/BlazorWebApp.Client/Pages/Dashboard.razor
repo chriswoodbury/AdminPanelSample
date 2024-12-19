@@ -1,11 +1,6 @@
 ﻿@page "/dashboard"
 
-@using Microsoft.AspNetCore.Authorization
-
-@attribute [Authorize(Roles = "Admin")]
-@rendermode InteractiveAuto
-
-<PageTitle>Mercola Health - Admin Panel - About</PageTitle>
+<PageTitle>Mercola Health - Admin Panel Dashboard</PageTitle>
 
 <div style="text-align: center;">
     <img src="/images/Mercola-logo-black-font.svg" alt="mercola logo" width="150" height="80" />
@@ -13,17 +8,3 @@
     <span style="color: firebrick;">Dashboard</span>
 </div>
 
-<div style="text-align: center; margin-top: 23px;">
-    <div class="row">
-        <div class="col-6">
-            <img src="/images/chart2.png" alt="" />
-        </div>
-        <div class="col-6">
-            <img src="/images/chart3.png" alt="" />
-        </div>
-    </div>
-</div>
-
-@code {
-
-}

@@ -1,10 +1,51 @@
 ﻿@page "/"
 
-<PageTitle>Mercola Health - Home</PageTitle>
+<PageTitle>Mercola Health - Admin Panel Dashboard</PageTitle>
 
 <div style="text-align: center;">
     <img src="/images/Mercola-logo-black-font.svg" alt="mercola logo" width="150" height="80" />
-    <br />
-    <span style="color: firebrick;">Home Page</span>
+   @*  <br />
+    <span style="color: firebrick;">Dashboard</span> *@
 </div>
 
+<div style="text-align: center;">
+
+<AuthorizeView>
+   
+
+<table style="width: 100%; margin-top: 30px; font-size: small;">
+    <tr>
+        <td style="vertical-align: middle; text-align: center; width: 34%; padding-left: 3px; padding-right: 3px;">
+            <a href="/usermanager" style="text-decoration: none;">
+                <div class="card shadow bg-white rounded" style="height: 150px; color: black;">
+                    <img src="/images/user.jpg" alt="user manager logo" width="80" height="80" />
+                    <br />
+                    User Management
+                </div>
+            </a>
+        </td>
+         <td style="vertical-align: middle; text-align: center; width: 33%; padding-left: 3px; padding-right: 3px;">
+            <a href="/appleaday" style="text-decoration: none;">
+                <div class="card shadow bg-white rounded" style="height: 150px; color: black;">
+                    <img src="/images/apple.jpg" alt="apple a day logo" width="110" height="70" />
+                    <br />
+                    Apple a Day
+                </div>
+            </a>
+        </td>
+        <td style="vertical-align: middle; text-align: center; width: 33%; padding-left: 3px; padding-right: 3px;">
+            <a href="/onboarding" style="text-decoration: none;">
+                <div class="card shadow bg-white rounded" style="height: 150px; color: black;">
+                    <img src="/images/onboarding.jpg" alt="apple a day logo" width="70" height="70" />
+                    <br />
+                    Onboarding
+                </div>
+            </a>
+        </td>
+    </tr>
+</table>
+
+
+</AuthorizeView>
+
+</div>
