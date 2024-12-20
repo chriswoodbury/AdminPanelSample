@@ -1,0 +1,21 @@
+﻿@page "/edituser/{id:int}"
+
+<PageTitle>Mercola Health - Edit User Profile</PageTitle>
+
+<div style="text-align: center;">
+    <img src="/images/Mercola-logo-black-font.svg" alt="mercola logo" width="150" height="80" />
+    <br />
+    <span style="color: firebrick;">Edit User Profile</span>
+</div>
+
+<br />
+<br />
+
+@if (user != null)
+{
+    <span>Edit user profile for <span style="color: firebrick;">@user.Name</span></span>
+}
+
+<br />
+<br />
+<a class="btn btn-sm btn-outline-success" href="/usermanager">Go Back</a>

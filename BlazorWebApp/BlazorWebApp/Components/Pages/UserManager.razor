@@ -1,0 +1,39 @@
+﻿@page "/usermanager"
+
+<PageTitle>Mercola Health - Admin Panel Dashboard</PageTitle>
+
+@using Microsoft.AspNetCore.Authorization
+
+@attribute [Authorize(Roles = "SuperAdmin")]
+
+<div style="text-align: center;">
+	<img src="/images/Mercola-logo-black-font.svg" alt="mercola logo" width="150" height="80" />
+	<br />
+	<span style="color: firebrick;">User Management</span>
+</div>
+
+<br />
+<br />
+@if (users != null)
+{
+	<table class="table table-striped" style="width: 100%;">
+		<th></th>
+		<th>User Name</th>
+		<th>Email</th>
+		<th>Role</th>
+	@foreach (var usr in users)
+	{
+		<tr>
+		<td>
+			<NavLink href="@GetEditUrl(usr.Id)">
+				<button class="btn btn-sm btn-primary">Edit</button>
+			</NavLink>
+		</td>
+		<td>@usr.Name</td>
+		<td>@usr.Email</td>
+		<td>@usr.Role</td>
+		</tr>
+	}
+
+	</table>
+}
